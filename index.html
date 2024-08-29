@@ -23,6 +23,8 @@
       href="https://fonts.googleapis.com/css?family=Fjalla+One"
       rel="stylesheet"
     />
+    <!-- client js -->
+    <script src="discount.js"></script>
     <!-- client css -->
     <link rel="stylesheet" href="client.css" />
   </head>
@@ -130,6 +132,81 @@
             <p class="h5 mb-0"><i class="bi bi-bag"></i> Order now</p></a
           >
         </div>
+      </div>
+    </div>
+
+    <div class="row p-2 m-2" id="discount-row">
+      <div class="col px-2 py-4">
+        <h3>Tis the seasoning</h3>
+        <div class="mb-4">
+          Order today! Save 12.5% on Chef Anton's Italian Seasoning. You don't
+          want to make Chef Anton mad, do you?
+        </div>
+        <i>Discount expires: 2/25/2025</i><br />
+        <i class="bi bi-receipt"></i>
+        <a
+          href="#"
+          class="discount"
+          data-product="Chef Anton's Italian Seasoning"
+          data-discount="0000"
+          >Discount Code</a
+        >
+      </div>
+      <div class="col px-2 py-4">
+        <h3>Go Green</h3>
+        <div class="mb-4">
+          Genen Shouyu goes on sale very rarely. Order now to save 10% off our
+          already low price.
+        </div>
+        <i>Discount expires: 2/25/2025</i><br />
+        <i class="bi bi-receipt"></i>
+        <a
+          href="#"
+          class="discount"
+          data-product="Genen Shouyu"
+          data-discount="1111"
+          >Discount Code</a
+        >
+      </div>
+      <div class="col px-2 py-4">
+        <h3>Half Price</h3>
+        <div class="mb-4">
+          Just because you can't pronounce "Schoggi Schokoklade" doesn't mean
+          you shouldn't buy it. Get it now for 50%!
+        </div>
+        <i>Discount expires: 2/25/2025</i><br />
+        <i class="bi bi-receipt"></i>
+        <a
+          href="#"
+          class="discount"
+          data-product="Half Off"
+          data-discount="2222"
+          >Discount Code</a
+        >
+      </div>
+    </div>
+
+    <!-- toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-autohide="false"
+      >
+        <div class="toast-header">
+          <strong class="me-auto" id="product">Product</strong>
+          <small class="text-body-secondary">discount title</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body" id="discount">Discount Code: 1234</div>
       </div>
     </div>
   </body>
